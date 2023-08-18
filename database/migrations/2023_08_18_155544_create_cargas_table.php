@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('cargas', function (Blueprint $table) {
             $table->id();
             $table->string('timestamps_old')->nullable();
-            $table->string('ticket_number');
-            $table->string('ticket_id');
-            $table->string('rating');
+            $table->integer('ticket_number');
+            $table->integer('ticket_id');
+            $table->integer('rating');
             $table->string('status');
             $table->mediumText('comments')->nullable();
             $table->string('date');
